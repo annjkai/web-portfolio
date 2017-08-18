@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--General comments:
+* As I want to make any web apps I create as accessible as possible, I write very detailed descriptions
+ of pictures -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--Google fonts API - the only font used is Raleway-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!--own stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Portfolio</title>
+
+</head>
+<body>
+
+<div class="container-fluid" id="main_container">
+    <div class="row" id="main_row">
+
+        <!--the #text_content_row contains all items that have text or require actions -->
+        <div class="col-md-6 content_area">
+            <div id="header_text">
+                <h2 id="title_text">Annika Kaiser</h2>
+                <p id="subtitle_text">Frontend Developer</p>
+                <p id="description_text">I am an aspiring developer with a strong interest in creating an intuitive
+                    and enjoyable user experience //</p>
+            </div>
+
+            <!--responsive content (3 buttons + images) with links to other pages-->
+            <div id="project_list" class="row">
+                <div id="project_1" class="col-sm-4">
+                    <p>Android Projects //</p>
+                    <a href="https://github.com/annjkai" target="_blank">
+                        <img src="images/placeimg_150_150_grayscale_animals.jpg" class="img-responsive"
+                             alt="A black and white image of a dachshund leaning out of a window">
+                    </a>
+                </div>
+
+                <div id="project_2" class="col-sm-4">
+                    <p>Web Projects //</p>
+                    <a href="https://github.com/annjkai" target="_blank">
+                        <img src="images/placeimg_150_150_grayscale_animals2.jpg" class="img-responsive"
+                             alt="A black and white image of a tabby cat staring up at the camera">
+                    </a>
+                </div>
+
+                <div id="project_3" class="col-sm-4">
+                    <p>Other Projects //</p>
+                    <a href="https://github.com/annjkai" target="_blank">
+                        <img src="images/placeimg_150_150_grayscale_animals3.jpg" class="img-responsive"
+                             alt="A black and white image of a Hungarian viszla resting its head on a Scrabble game">
+                    </a>
+                </div>
+            </div>
+
+            <!--logos/icons as links to other content, here github profile and instagram-->
+            <div id="social_media" class="row social_icon">
+                <a href="https://www.instagram.com/ironannebonnie/" target="_blank">
+                    <img id="instagram_logo" src="images/glyph-logo_May2016.png" class="img-responsive"
+                         alt="Greyscale Instagram logo">
+                </a>
+
+                <a href="https://github.com/annjkai" target="_blank">
+                    <img id="github_logo" src="images/GitHub-Mark-120px-plus.png" class="img-responsive"
+                         alt="Greyscale Github logo">
+                </a>
+            </div>
+        </div>
+
+        <!--the #image_content_row is only responsible for the profile portrait -->
+        <div class="col-md-6 img_wrap" id="wrap">
+            <img class="img-responsive" id="portfolio_portrait" src="images/kaiser_portfolio_2.jpg"
+                 alt="A black and white image of a woman sitting on a couch">
+        </div>
+
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+</body>
+</html>

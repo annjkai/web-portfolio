@@ -1,0 +1,101 @@
+/*
+* {
+    border: 1px solid red !important;
+}
+*/
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+#image_content {
+    /*figure out how to bleed this to the right edge*/
+}
+
+.img_wrap::before {
+    /*background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background-image: -moz-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background-image: -ms-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background-image: -o-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background-image: -webkit-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    content: "\00a0";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; */
+}
+
+#portfolio_portrait {
+    max-width: 100vh;
+    max-height: 100vh;
+    height: auto;
+    float: right;
+    margin-left: 5%;
+    /* margin-right: -5%; */
+    overflow: hidden;
+}
+
+.content_area {
+    padding-top: 150px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+#title_text {
+    font-weight: bold
+}
+
+#subtitle_text {
+    font-weight: 100;
+}
+
+#header_text {
+}
+
+#description_text {
+    text-align: justify;
+}
+
+#project_list {
+    margin-top: 75px;
+}
+
+#project_1 {
+    text-align: center;
+    font-weight: 600;
+}
+
+#project_2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+#project_3 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.hover:hover{
+    background-color: #6c757d;
+}
+
+.social_icon {
+    opacity: 0.3;
+    filter: alpha(opacity=50);
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    margin-top: 200px;
+}
+
+#instagram_logo {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+#github_logo {
+    height: 30px;
+    width: 30px;
+}
