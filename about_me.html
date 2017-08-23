@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--Google fonts API - the only font used is Raleway-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!--own stylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>// Annika Kaiser | About Me</title>
+</head>
+<body>
+
+<div id="about-page-container" class="container-fluid">
+    <div id="about-main-row" class="row">
+
+        <!--     <div id="about-image-col" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                 <img id="about-portrait" src="images/kaiser_portfolio_2.jpg" class="img-responsive"
+                      alt="A black and white image of the developer sitting on a couch">
+             </div> -->
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h1 class="display-4">Hi, I'm Annika.</h1>
+            <p id="about-text" >I'm an aspiring developer with a background in linguistics and several years of project management
+                experience in a pedagogical environment, as well as a strong background in text development, proofreading, editing and translating.
+                I'm fluent in English and German and love creating beautiful, simple things – whether
+                that's a marketing text, an intuitive web app or a bedazzled flower pot //</p>
+            <p>Find me here:</p>
+
+            <!--This grid has caused me no end of problems so I've chickened out a bit - ideally
+             there is a small, even margin between the 4 tiles, and the images scale down on xs and sm
+             screens rather than stacking. In reality Bootstrap4's built-in padding was a struggle for me so for the time being I've
+             just removed it. I took a single image and manually cut it into quarters so you can kind of see the seam when they're laid
+             out like this. The struggle is real.-->
+            <div class="container-fluid nebula-grid">
+                <div class="row no-gutters">
+
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                        <!--empty "padding" col-->
+                    </div>
+
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                        <div class="hover-effect-nebula">
+                            <img id="nebula-1" src="images/Orion_Nebula_section1.jpg" class="img-responsive" alt="A section of the Orion Nebula">
+                            <div class="overlay-nebula">
+                                <p>
+                                    <a href="https://github.com/annjkai" target="_blank">
+                                        GITHUB
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                        <div class="hover-effect-nebula">
+                            <img id="nebula-2" src="images/Orion_Nebula_section2.jpg" class="img-responsive" alt="A section of the Orion Nebula">
+                            <div class="overlay-nebula">
+                                <p>
+                                    <a href="https://www.linkedin.com/in/annika-kaiser-09981ab1/" target="_blank">
+                                        LINKEDIN
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                        <!--empty "padding" col-->
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                        <!--empty "padding" col-->
+                    </div>
+
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                        <div class="hover-effect-nebula">
+                            <img id="nebula-3" src="images/Orion_Nebula_section3.jpg" class="img-responsive" alt="A section of the Orion Nebula">
+                            <div class="overlay-nebula">
+                                <p>
+                                    <a href="https://www.instagram.com/ironannebonnie/" target="_blank">
+                                        INSTAGRAM
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                        <div class="hover-effect-nebula">
+                            <img id="nebula-4" src="images/Orion_Nebula_section4.jpg" class="img-responsive" alt="A section of the Orion Nebula">
+                            <div class="overlay-nebula">
+                                <p>
+                                    <a href="https://stackoverflow.com/users/8014709/ironannebonnie" target="_blank">
+                                        STACK-
+                                        OVERFLOW
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                        <!--empty "padding" col-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,89 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--General comments:
-* As I want to make any web apps I create as accessible as possible, I write very detailed descriptions
- of pictures -->
+ -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
           integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!--Google fonts API - the only font used is Raleway-->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <!--own stylesheet-->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!--Own stylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
     <title>// Annika Kaiser | Frontend Developer</title>
 
 </head>
 <body>
 
-<div class="container-fluid" id="main_container">
-    <div class="row" id="main_row">
+<!--the entire page sits in a container-->
+<div id="page-container" class="container-fluid">
 
-        <!--the #image_content_row is only responsible for the profile portrait -->
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" id="wrap">
-            <img class="img-responsive" id="portfolio_portrait" src="images/kaiser_portfolio_2.jpg"
-                 alt="A black and white image of a woman sitting on a couch">
+    <!--the header image is located here-->
+    <div id="header-image-row" class="row">
+        <div id="portrait-col" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <img id="portfolio-portrait" src="images/kaiser_portfolio5.jpg" class="img-responsive" alt="A circular greyscale portrait">
+        </div>
+    </div>
+
+    <!--the header text is located here-->
+    <div id="header-text-row" class="row">
+        <div id="header-text-col" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h1 class="display-4">Annika Kaiser</h1>
+            <h5 class="text-muted">Frontend Developer</h5>
+        </div>
+    </div>
+
+    <!--the subheader/description text is located here-->
+    <div id="subheader-text-row" class="row">
+        <div id="subheader-text-col" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <p class="text-muted"><!--I think this page is a lot cleaner without more text so
+            I've relegated the description to the About Me page but left the element in case I ever want it--></p>
+        </div>
+    </div>
+
+    <!--the project and social media tiles are located here - depending on the content they will link either to
+    external pages or to pages that belong to my site. Each tile has a hover effect that layers opacity over it.
+    On screens that can accommodate it, the tiles are all in one horizontal row, and on smaller screens
+    they stack to vertical-->
+    <div id="tiles-row" class="row">
+        <div id="web-projects-tile" class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+            <p>Web Projects //</p>
+            <a href="https://codepen.io/ironannebonnie/#" target="_blank">
+                <div id="hover-1" class="hover-effect">
+                    <figure><img src="images/placeimg_150_150_grayscale_animals.jpg" class="img-responsive"
+                                 alt="A black and white image of a dachshund leaning out of a window"></figure>
+                </div>
+            </a>
         </div>
 
-
-        <!--the #text_content_row contains all items that have text or require actions -->
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 content_area">
-            <div id="header_text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <h2 id="title_text">Annika Kaiser</h2>
-                <p id="subtitle_text">Frontend Developer</p>
-                <p id="description_text">I am an aspiring developer with a strong interest in creating an intuitive
-                    and enjoyable user experience //</p>
-            </div>
-
-            <!--responsive content (3 buttons + images) with links to other pages-->
-            <div id="project_list" class="row">
-
-                <div id="project_1" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <p>Android Projects //</p>
-
-                    <a href="https://github.com/annjkai" target="_blank">
-                        <img src="images/placeimg_150_150_grayscale_animals.jpg" class="img-responsive"
-                             alt="A black and white image of a dachshund leaning out of a window">
-                    </a>
-
+        <div id="android-projects-tile" class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+            <p>Android Projects //</p>
+            <a id="project-image-2" href="https://github.com/annjkai?utf8=%E2%9C%93&tab=repositories&q=&type=&language=java" target="_blank">
+                <div id="hover-2" class="hover-effect">
+                    <figure><img src="images/placeimg_150_150_grayscale_animals2.jpg" class="img-responsive"
+                                 alt="A black and white image of a tabby cat staring up at the camera"></figure>
                 </div>
+            </a>
+        </div>
 
-
-                <div id="project_2" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <p>Web Projects //</p>
-                    <a id="project_image_2" href="https://github.com/annjkai" target="_blank">
-                        <img src="images/placeimg_150_150_grayscale_animals2.jpg" class="img-responsive"
-                             alt="A black and white image of a tabby cat staring up at the camera">
-                    </a>
+        <div id="resume-tile" class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+            <p>My Resume //</p>
+            <a id="project-image-3" href="https://github.com/annjkai" target="_blank">
+                <div id="hover-3" class="hover-effect">
+                    <figure><img src="images/placeimg_150_150_grayscale_animals3.jpg" class="img-responsive"
+                                 alt="A black and white image of a Hungarian viszla resting its head on a Scrabble game">
+                    </figure>
                 </div>
+            </a>
+        </div>
 
-                <div id="project_3" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <p>Other Projects //</p>
-                    <a id="project_image_3" href="https://github.com/annjkai" target="_blank">
-                        <img src="images/placeimg_150_150_grayscale_animals3.jpg" class="img-responsive"
-                             alt="A black and white image of a Hungarian viszla resting its head on a Scrabble game">
-                    </a>
+        <div id="about-me-tile" class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+            <p>About Me //</p>
+            <a id="project-image-4" href="http://localhost:63342/portfolio_ajk/about_me.html?_ijt=2lln3hb71kihou0romsstpa4sg" target="_blank">
+                <div id="hover-4" class="hover-effect">
+                    <figure><img src="images/placeimg_150_150_grayscale_animals4.jpg" class="img-responsive"
+                                 alt="A black and white image of a tabby cat staring up at the camera"></figure>
                 </div>
-            </div>
-
-            <!--logos/icons as links to other content, here github profile and instagram-->
-            <div id="social_media" class="row social_icon flex-center">
-                <div class="col-xs-6">
-                    <a href="https://www.instagram.com/ironannebonnie/" target="_blank">
-                        <img id="instagram_logo" src="images/glyph-logo_May2016.png" class="img-responsive"
-                             alt="Greyscale Instagram logo">
-                    </a>
-                </div>
-
-                <div class="col-xs-6">
-                    <a href="https://github.com/annjkai" target="_blank">
-                        <img id="github_logo" src="images/GitHub-Mark-120px-plus.png" class="img-responsive"
-                             alt="Greyscale Github logo">
-                    </a>
-                </div>
-            </div>
+            </a>
         </div>
     </div>
 </div>
